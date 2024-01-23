@@ -479,7 +479,7 @@ def get_projection_from_circle_and_vertice(vertice, circle):
 # Takes as arugment the projected points (embedded), if not given then re-uses the
 # already transformed points in the atlas mesh for the given mesh type.
 def project_thickness(mapped_mesh, mesh_type="FC", embedded=None):
-    def do_linear_pca(vertice, dim=3.0):
+    def do_linear_pca(vertice, dim=3):
         from sklearn.decomposition import KernelPCA
 
         kpca = KernelPCA(n_components=2, degree=dim, n_jobs=None)
