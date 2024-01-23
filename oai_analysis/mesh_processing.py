@@ -12,7 +12,7 @@ Sample usage for mapping attributes/data to atlas mesh (target mesh)
     mapped_mesh = mp.map_attributes(source_mesh, target_mesh)
 """
 
-import numpy as np
+import numpy as np  
 from sklearn.cluster import KMeans
 import itk
 import trimesh
